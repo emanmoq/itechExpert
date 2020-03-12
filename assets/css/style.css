@@ -1,11 +1,51 @@
 @font-face{
-    font-family: Avenir;
-    src: url("../Fonts/AEH.otf");
+    font-family: ElMessiriBold;
+    src: url("../Fonts/ElMessiriBold.otf");
 }
 @font-face{
     font-family: Avenir-M;
     src: url("../Fonts/AvenirLTStd-Medium.otf");
 }
+.background{
+    background-image: url("../images/heroBackground.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.arrow-up {
+    width: 0; 
+    height: 0; 
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    
+    border-bottom: 5px solid black;
+  }
+  
+  .arrow-down {
+    width: 0; 
+    height: 0; 
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    
+    border-top: 20px solid #f00;
+  }
+  
+  .arrow-right {
+    width: 0; 
+    height: 0; 
+    border-top: 60px solid transparent;
+    border-bottom: 60px solid transparent;
+    
+    border-left: 60px solid green;
+  }
+  
+  .arrow-left {
+    width: 0; 
+    height: 0; 
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent; 
+    
+    border-right:10px solid blue; 
+  }
 ul{
     margin:0;
     padding:0;
@@ -20,7 +60,7 @@ img{
     width:100%;
 }
 .logo{
-    width:210px;
+    width:156px;
     transition: .5s all;
 }
 .logo:hover{
@@ -35,34 +75,14 @@ img{
 body{
     font-family: Avenir;
 }
-.verticalSocial{
-    position: fixed;
-    left:0;
-    top:384px;
-    z-index: 99999999;
+.heroImg{
+    width:100%;
 }
 
-.verticalSocial ul li{
-    padding:10px 22px;
-}
-.verticalSocial ul li:hover{
-    border-top-right-radius: 100px;
-    border-bottom-right-radius: 100px;
-   box-shadow: 0 2px 13px 0 rgba(156, 0, 65, 0.04);
-   background-image: linear-gradient(to bottom right, #853FE4, #5842dd );
-}
-.verticalSocial ul li:hover a{
-    color:white;
-}
-.verticalSocial ul li a{
-    color:#bdc9d9;
-    font-size:15px;
-}
 .navbar-expand-lg .navbar-nav .nav-link {
-    font-family: Avenir;
-    font-size: 14px;
-    font-weight: 900;
-    color: white;
+    font-family: ElMessiriBold;
+    font-size: 15px;
+    color: black;
     padding:11px;
     position: relative;
 }
@@ -72,13 +92,13 @@ body{
     left:32%;
     height: 2px;
     border-radius: 1px;
-    background-color: #ffffff;
+    background-image:linear-gradient(to top right, #00ABC3, #8DBC33 );
     width:0;
     bottom:0;
     transition: .5s ease-in-out;
 }
 .nav-link.active:before , .nav-link:hover:before{
-    width:30%;
+    width:40%;
     transition: .5s ease-in-out;
 }
 .mobileNav{
@@ -223,15 +243,39 @@ transition: all 8s ease 4s;
 .bigBackground:hover {
 top:50px;
 }
-.HeroTitle{
-    font-size: 37px;
+.HeroTitle h1{
+    font-size: 59px;
     font-weight: 900;
-    color: #222d39;
+    color: #2D2C43;
+    font-family: ElMessiriBold;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
 }
+.HeroTitle h1:before{
+    position: absolute;
+    content: "";
+    left:2%;
+    bottom:42%;
+    width:100%;
+    height:8px;
+    background-color:#46B37B;
+    border-radius:2px;
+    z-index: -1;
+}
+.HeroTitle span{
+font-size:22px;
+margin-bottom:38px;
+color:#9F9F9F;
+font-family: ElMessiriBold;
+
+
+}
+
 #heroSection{
-    padding-top:150px;
     padding-bottom:128px;
     position: relative;
+  
 }
 .heroDetails{
     font-size: 16px;
@@ -241,21 +285,21 @@ top:50px;
 }
 .contactBtn{
  
-    box-shadow: 0 2px 8px 0 rgba(91, 87, 208, 0.7);
-    width: 151px;
+    width: 172px;
     border-radius: 24.5px;
-    background-image: linear-gradient(250deg, #853fe4 , #5842dd);
-    font-weight: 900;
+    background-color:#46B37B;
+    font-family: ElMessiriBold;
     color: #ffffff;
     text-align: center;
     margin-top:21px;
     transition: .5s all;
+    font-size:16px;
 }
 .contactBtn:hover{
     color: #5842dd;
     background-color: #ffffff;
     background-image: none;
-    border:1px solid #5842dd;
+    border:1px solid #46B37B;
     transition: .5s all;
     
 
@@ -433,14 +477,8 @@ height:100%;
 .scrollNav .navbar{
     padding:20px;
 }
-.scrollNav .navbar-expand-lg .navbar-nav .nav-link {
-    color:#5842dd;
-    font-size:16px;
-}
 
-.scrollNav .navbar-expand-lg .navbar-nav .nav-link:before,.scrollNav .nav-link.active:before{
-    background-color:#5842dd;
-}
+
 #TestiMonials{
     background-color: #f9f9fc;
     margin-top:-20%;
