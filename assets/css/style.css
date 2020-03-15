@@ -882,22 +882,19 @@ display: inline-block;
             position: absolute;
             bottom:80px;
             right:103px;
+            width:44px;
+            height:44px;
+            background-color: #46B37B;
+            border-radius: 50%;;
         }
         .up i{
             padding:15px;
-            border:1px solid white;
             color:white;
             font-size: 15px;
-            border-radius: 50%;
             transition: .5s all;
           
         }
-        .up:hover i{
-background-color:white;
-color:#6d41e0;
-transform: rotate(360deg);
-transition: .5s all;
-        }
+
 .copyRight{
     margin-top:40px;
    margin-bottom:15px;
