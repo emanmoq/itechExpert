@@ -1,7 +1,7 @@
 jQuery(function ($) {
 
   new WOW().init();
-        filter_container = $("#projectGallery");
+/**        filter_container = $("#projectGallery");
   
         filter_container.children().css('position', 'relative');
         filter_container.masonry({
@@ -53,39 +53,24 @@ jQuery(function ($) {
           filter_container.masonry();
   
         });
-
+ */
 
     
         $(".nav-link").click(function(){
           $(".nav-link").removeClass("active");
           $(this).addClass("active");
         });
-        $(window).scroll(function () {
-          scrollTop = $(window).scrollTop();
-        
-           if( scrollTop >$('header').height()){
-             $("#counter").css("padding-top","150px");
-              $('header').addClass('scrollNav');
-        
-        
-           }
-           else{
-              $('header').removeClass('scrollNav');    
-        
-           }
-           
-        
-          });
+   
           function onScroll(event){
 			
             var scrollPosition = $(document).scrollTop();
-            $('.nav-link a[href^="#"').each(function () {
+            $('.nav-item a[href^="#"').each(function () {
               console.log($(this).attr('href')); 
               var refElement = $($(this).attr("href"));
             //   console.log($(this).attr("href")); //log
               if (refElement.length&&refElement.position().top <= scrollPosition) {
               $('.nav-link').removeClass("active");
-              $(this).parent().addClass("active");
+              $(this).addClass("active");
               }
        
               else{
@@ -110,6 +95,21 @@ jQuery(function ($) {
             
               return false;
             });
+            $(window).scroll(function () {
+              scrollTop = $(window).scrollTop();
+            
+               if( scrollTop >$('header').height()){
+                  $('header').addClass('scrollNav');
+            
+            
+               }
+               else{
+                  $('header').removeClass('scrollNav');    
+            
+               }
+               
+            
+              });
            
             $('.up a').on('click', function () {
               $('html, body').animate({ scrollTop: $(this.hash).offset().top  }, 1000);
@@ -126,10 +126,10 @@ jQuery(function ($) {
                 items:1
               },
               600:{
-                items:2
+                items:1
               },
               1000:{
-                items:2
+                items:1
               }
               }
               });
@@ -183,6 +183,23 @@ jQuery(function ($) {
               },
               1000:{
                 items:6
+              }
+              }
+              });
+              $(".projectGallery").owlCarousel({
+                loop:true,
+                margin:40,
+                dots:false,
+                nav:true,
+              responsive:{
+              0:{
+                items:1
+              },
+              600:{
+                items:2
+              },
+              1000:{
+                items:4
               }
               }
               });
