@@ -1,4 +1,8 @@
 
+@font-face{
+    font-family: Avenir;
+    src: url("../Fonts/AEH.otf");
+}
 .background{
     background-image: url("../images/heroBackground.png");
     background-size: cover;
@@ -250,8 +254,9 @@ font-family: ElMessiriBold;
 .counterNum{
 color:#2D2D43;
     font-size: 52px;
-    font-weight: 700;
-text-align: center;}
+text-align: center;
+font-family: Avenir;
+}
 .categ{
     font-size: 17px;
     font-weight: 500;
