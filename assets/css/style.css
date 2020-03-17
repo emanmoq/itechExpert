@@ -251,9 +251,7 @@ font-family: ElMessiriBold;
     padding:43px 0;
     padding-top:75px;
 }
-.counterCont{
-    text-align: center;
-}
+
 .counterCont p{
     font-size:18px;
     color:#B4B5B4;
@@ -365,7 +363,7 @@ font-family: Avenir;
 }
 #projectTabs .nav-link {
     font-size: 15px;
-    font-weight: 500;
+    font-weight: 600;
     color: black;
     display:inline-block;
     padding:0 13px;
@@ -376,8 +374,7 @@ font-family: Avenir;
 #projectTabs .nav-link.active:before{
 width:60%;
 }
-#projectTabs .nav-link{
-}
+
 #projectTabs .nav-link:before{
     position: absolute;
     content: "";
@@ -385,11 +382,10 @@ width:60%;
     left:20%;
     height:2px;
     width:0;
-    background-color: #707070;
-    transition: .5s all;
+    background-image:linear-gradient(to top right, #00ABC3, #8DBC33 );
+        transition: .5s all;
     }
-#projectTabs .nav-link:hover{
-    color:#707070;}
+
     #projectTabs .nav-link:hover:before{
       width:60%;
     transition:.5s all;  }

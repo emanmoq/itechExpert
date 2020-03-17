@@ -68,7 +68,7 @@ jQuery(function ($) {
               console.log($(this).attr('href')); 
               var refElement = $($(this).attr("href"));
             //   console.log($(this).attr("href")); //log
-              if (refElement.length&&refElement.position().top <= scrollPosition) {
+              if (refElement.length&&refElement.position().top-150 <= scrollPosition) {
               $('.nav-link').removeClass("active");
               $(this).addClass("active");
               }
