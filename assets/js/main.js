@@ -81,14 +81,14 @@ jQuery(function ($) {
             }
             $(document).on("scroll", onScroll);
             $('.navbar-collapse ul li a').on('click', function () {
-              if($(this).attr('href')=="TestiMonials"){
-                $('html, body').animate({ scrollTop: $(this.hash).offset().top +50 }, 1000);
+              if($(this).attr('href')=="#services"){
+                $('html, body').animate({ scrollTop: $(this.hash).offset().top -300 }, 1000);
                 $('.navbar-collapse.collapse.in').removeClass('in');
 
               }
              
               else{
-                $('html, body').animate({ scrollTop: $(this.hash).offset().top-50 }, 1000);
+                $('html, body').animate({ scrollTop: $(this.hash).offset().top -100 }, 1000);
                 $('.navbar-collapse.collapse.in').removeClass('in');
 
               }
@@ -115,24 +115,7 @@ jQuery(function ($) {
               $('html, body').animate({ scrollTop: $(this.hash).offset().top  }, 1000);
             });
             setTimeout(function(){
-              $('.TestiMonialsCarusel').owlCarousel({
-                loop:true,
-                margin:20,
-                nav:true,
-                dots:false,
-                navText :['<i class="lni-chevron-left"></i>','<i class="lni-chevron-right"></i>'],
-              responsive:{
-              0:{
-                items:1
-              },
-              600:{
-                items:1
-              },
-              1000:{
-                items:1
-              }
-              }
-              });
+          
               $('.ourTeamCarousel').owlCarousel({
                 loop:true,
                 margin:20,
@@ -204,7 +187,24 @@ jQuery(function ($) {
               }
               });
             },3000)
-          
+            $('.TestiMonialsCarusel').owlCarousel({
+              loop:true,
+              margin:20,
+              nav:true,
+              dots:false,
+              navText :['<i class="lni-chevron-left"></i>','<i class="lni-chevron-right"></i>'],
+            responsive:{
+            0:{
+              items:1
+            },
+            600:{
+              items:1
+            },
+            1000:{
+              items:1
+            }
+            }
+            });
    
             $('select').selectric({
               disableOnMobile: false,

@@ -9,6 +9,7 @@
     background-repeat: no-repeat;
     position: relative;
     z-index: 2;
+    padding-bottom:113px;
     }
 .backgroundtriangle{
     position: absolute;
@@ -190,8 +191,8 @@ button.navbar-toggler {
 .HeroTitle h1:before{
     position: absolute;
     content: "";
-    left:2%;
-    bottom:42%;
+    left: 1%;
+    bottom: 11%;
     width:100%;
     height:8px;
     background-color:#46B37B;
@@ -215,26 +216,32 @@ font-family: ElMessiriBold;
 .heroDetails{
     font-size: 16px;
     font-weight: 400;
-    color: #677294;
-
+    color: #2D2C43;
+    margin-top:100px;
+    font-size:32px;
+}
+.herosmall{
+    margin-top:50px;
+    font-size: 20px;
+    color:#505965;
 }
 .contactBtn{
  
     width: 172px;
     border-radius: 24.5px;
-    background-color:#46B37B;
     font-family: ElMessiriBold;
-    color: #ffffff;
+    color: #46B37B;
+    background-color: #ffffff;
     text-align: center;
     margin-top:21px;
     transition: .5s all;
     font-size:16px;
+    border:1px solid #46B37B;
 }
 .contactBtn:hover{
-    color: #46B37B;
-    background-color: #ffffff;
-    background-image: none;
-    border:1px solid #46B37B;
+    background-color:#46B37B;
+    color: #ffffff;
+   
     transition: .5s all;
     
 
@@ -359,7 +366,7 @@ font-family: Avenir;
 #projectTabs .nav-link {
     font-size: 15px;
     font-weight: 500;
-    color: #677294;
+    color: black;
     display:inline-block;
     padding:0 13px;
     cursor: pointer;
@@ -394,6 +401,10 @@ height:100%;
     height:329px;
     overflow: hidden;
     position: relative;
+}
+#projectGallery .owl-nav button{
+    box-shadow: 0 2px 14px rgba(167, 167, 167, .5);
+
 }
 #projectGallery .owl-nav button span {
     font-size: 32px !important;
@@ -475,7 +486,7 @@ margin-bottom:0;
 
 #TestiMonials{
     position: relative;
-        padding-bottom:120px;
+     margin-bottom:120px;
     margin-top:120px;
 }
 .testBG{
@@ -506,8 +517,10 @@ margin-bottom:0;
     font-size: 13px;
     color: #9F9F9F;
 }
-.testiDesc p{
+.testiDesc{
     margin-left:60px;
+}
+.testiDesc p{
     font-size: 19px;
     color: #595959;
 }
@@ -538,7 +551,7 @@ margin-bottom:0;
 .TestiMonialsCarusel .owl-nav button{
     width:44px;
     height:44px;
-   box-shadow: 0 6px 9px rgba(193, 193, 193, 1)
+   box-shadow: 0 6px 9px rgba(193, 193, 193, .5)
 }
 .TestiMonialsCarusel .owl-nav{
     top:63%;
@@ -567,7 +580,7 @@ margin-bottom:0;
     right: -12%!important;
     }
     .TestiMonialsCarusel .owl-nav button.owl-prev{
-        right: -2% !important;
+        right: 1% !important;
         }
     .TeamcarouselItem{
         margin-top:45px;
@@ -582,7 +595,6 @@ margin-bottom:0;
         position: absolute;
     }
     #Team{
-        padding-top:201px;
         padding-bottom:92px;
     }
     .TeamcarouselItem figure img{
@@ -624,7 +636,6 @@ margin-bottom:0;
     width:100%;
     height:165px;
     overflow: hidden;
-    border-radius: 30px;
 
 }
 .BlogItem .card-body{
@@ -746,27 +757,26 @@ color:#46B37B
 
         textarea{
             resize: none;
-            opacity: 0.68;
-            font-size: 12px !important;
-            font-weight: 500;
-            color: #677294 !important;
+   
         }
         .sendMessage{
             padding:8px 19px;
             border-radius: 24.5px;
-            background-color:#46B37B;
             text-align: center;
             font-size:15px;
-            color:white;
+            background-color:transparent;
+            color:#46B37B;
+            border:solid 1px #46B37B;
             margin-top:30px;
             transition: .5s all;
         }
         .sendMessage:hover{
+            background-color:#46B37B;
+
             background-image:none;
-            background-color:transparent;
-            color:#6d41e0;
-            border:solid 1px #6d41e0;
+         
             transition: .5s all;
+              color:white;
         }
         #Consultations{
             background-color: white;
@@ -856,7 +866,7 @@ display: inline-block;
             margin-bottom:60px;
             width:100%;
             border-radius: 0;
-            border:1px solid #707070;
+            border:1px solid #dbdbdb;
             background-color: transparent;
             margin-top:22px;
         }
@@ -889,15 +899,22 @@ display: inline-block;
             right:103px;
             width:44px;
             height:44px;
-            background-color: #46B37B;
+       background-color:white;
+       border:1px solid #46B37B;
             border-radius: 50%;;
         }
         .up i{
             padding:15px;
-            color:white;
+            color:#46B37B;
             font-size: 15px;
-            transition: .5s all;
           
+        }
+        .up:hover{
+            background-color: #46B37B;
+        }
+        .up:hover i{
+            color:white;
+
         }
 
 .copyRight{
