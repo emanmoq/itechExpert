@@ -1156,6 +1156,7 @@ margin-top:20px;
         color:#46B37B !important;
     }
     .close{
+        top:5%;
         position: absolute;
         right: 10%;
     }
