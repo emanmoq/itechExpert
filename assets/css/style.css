@@ -102,7 +102,7 @@ button.navbar-toggler {
 
 }
 #headerJop .mobileMenu i, header .mobileMenu i{
-    background-color: white;
+    background-color: #46B37B;
 }
 .mobileMenu i,header.scrollNav .mobileMenu i{
     background-color: #46B37B;
@@ -1112,6 +1112,23 @@ cursor: pointer;
       
         }
 @media(min-width:320px) and (max-width:767px){
+    .navbar-nav .nav-link:before{
+        display:none;
+    }
+    #services{
+        padding:0;
+    }
+    .heroDetails{
+font-size:16px;
+margin-top:20px;
+    }
+    .background{
+        padding-bottom:50px;
+    }
+    .container-fluid {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
     .circle{
         display: none;
     }
@@ -1152,7 +1169,7 @@ cursor: pointer;
         padding:20px 0;
     }
     .logo {
-        width: 150px;}
+        width: 119px;}
         .HeroTitle h1 {
             font-size: 24px;}
             .HeroTitle h1:before{
@@ -1202,10 +1219,18 @@ cursor: pointer;
         margin-bottom:20px;
     }
     #TestiMonials{
-        padding-bottom:50px
+        padding-bottom:20px;
+        margin-bottom:20px;
     }
     #Team{
         padding-top:50px;
+        padding-bottom: 25px;
+    }
+    #Blog{
+        padding:20px 0;
+    }
+    #Consultations{
+        padding-bottom: 0;
     }
    .form-group.phoneEmail{
         width:100%;
